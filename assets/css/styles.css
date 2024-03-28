@@ -32,25 +32,17 @@ body.dark-mode {
 header .row {
     justify-content: space-between;
     align-items: center;
-  }  
-  
-  header .brand h3 {
-    background-color: gray; 
-    padding: 10px; 
-  }
-  
-  header .day-night {
+}  
+
+header .day-night {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  header button {
+header button {
     padding: 5px;
-  }
-
-/* Universal Footer Section */
-
+}
 
 /* Homepage styling */
 
@@ -58,6 +50,16 @@ header .row {
     margin: 2%;
     border: solid;
 }
+
+/* Header Section */
+
+header .brand h3 {
+    background-color: gray; 
+    padding: 10px; 
+    text-align: center;
+}
+
+/* Main Section */
 
 main {
     border-top: 15px double;
@@ -75,9 +77,18 @@ main .col1 {
     background-color: black;
     width: 400px;
     height: 400px;
-    margin: 20px 0;
     border-radius: 500px;
+    margin: 20px auto;
 }
+
+/* Media query for .col1 border only */
+@media screen and (max-width: 992px) {
+    main .col1 {
+        border-right: none;
+    }
+}
+
+/* Universal Footer Section */
 
 
 

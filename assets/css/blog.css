@@ -1,7 +1,7 @@
 .posts-container {
-    border: solid black;
+    border: solid 5px;
     margin-top: 20px;
-    
+    padding: 5px;   
 }
 
 .posts-container h2 {
@@ -10,12 +10,12 @@
     background-color: grey;   
 }
 
-.posts-container p {
-    color: black;
+.posts-container .username {
+    border-top: solid 1px;
 }
 
-.posts-container .username {
-    background-color: red;
+.back-btn-col {
+    text-align: center;
 }
 
 
