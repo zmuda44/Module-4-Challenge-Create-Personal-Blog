@@ -32,7 +32,7 @@ WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 
 ## URL of deployed site
-
+https://zmuda44.github.io/Module-4-Challenge-Create-Personal-Blog/
 
 ## Screenshots of deployed homepage
 ![alt text](<First blog post day mode screenshot.png>)
