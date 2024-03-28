@@ -33,6 +33,11 @@ posts.push(blogPostObject);
 //Add the new object to the array and post the updated array
 localStorage.setItem('posts', JSON.stringify(posts));
 
+//Clear input fields
+username.value = "";
+title.value = "";
+content.value = "";
+
 // enterPosts();
 
 

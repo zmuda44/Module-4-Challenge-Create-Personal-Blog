@@ -1,0 +1,22 @@
+.posts-container {
+    border: solid black;
+    margin-top: 20px;
+    
+}
+
+.posts-container h2 {
+    text-align: center;
+    font-size: 3rem; 
+    background-color: grey;   
+}
+
+.posts-container p {
+    color: black;
+}
+
+.posts-container .username {
+    background-color: red;
+}
+
+
+

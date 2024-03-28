@@ -6,64 +6,70 @@
     <title>My First Blog</title>
     <!-- add meta tags -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/resets-variables.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-    <!-- Begin header section -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 brand">
-                    <h3>My First Blog Post</h3>
-                </div>
-                <div class="col-lg-3 ">
-                    <!-- Day Night Mode -->
-                    <div class="day-night">
-                        <h4 id="day-night-title">Day Mode</h4>
-                        <button id="day-night-btn">Change mode</button>
+    <div class="homepage-container">
+        <!-- Header section -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 brand">
+                        <h3>My First Blog Post</h3>
                     </div>
-                </div>          
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 border border-primary">
-                    <div style="background-color: black; width: 200px; height: 500px; margin: 20px;">
-                    <h3 id="rainbow-change">Greg's Blog Spot</h3></div>     
-                </div>
-               
-               <div class="col-lg-6 col-md-12 border border-secondary">
-                    <form action="blog.html" method="GET" id="submit-form">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" placeholder="User Name">
-                        <br>
-                        <label for="title">Title</label>
-                        <input type="text" id="title" placeholder="Blog Post Title">
-                        <br>
-                        <label for="blog-submit">Content</label>
-                        <input type="text" id="blog-content" name="blog-content" placeholder="Content" >
-                        <br>
-                        <input type="button" id="blog-submit" value="Submit Blog Post">
-                    </form>
+                    <div class="col-lg-3 ">
+                        <!-- Day Night Mode -->
+                        <div class="day-night">
+                            <h4 id="day-night-title">Day Mode</h4>
+                            <button id="day-night-btn">Change mode</button>
+                        </div>
+                    </div>          
                 </div>
             </div>
+        </header>
 
-            <div class="output-text">
-                <p id="output-p"></p>
+        <!-- Main section -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <!-- Right side big logo -->
+                    <div class="col1 col-md-12 col-lg-6">
+                        <div class="left-logo">
+                        <h3 id="rainbow-change">Greg's Blog Spot</h3></div>     
+                    </div>
+                <!-- Right side fill out form -->
+                <div class="col2 col-md-12 col-lg-6">
+                        <form action="blog.html" method="GET" id="submit-form">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="User Name">
+                            <br>
+                            <label for="title">Title</label>
+                            <input type="text" id="title" placeholder="Blog Post Title">
+                            <br>
+                            <label for="blog-submit">Content</label>
+                            <input type="text" id="blog-content" name="blog-content" placeholder="Content" >
+                            <br>
+                            <input type="button" id="blog-submit" value="Submit Blog Post">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="output-text">
+                    <p id="output-p"></p>
+                </div>
+                
+                
+                
+                
+                
+
+        
             </div>
-            
-            
-            
-            
-            
-
-     
-        </div>
-    </main>
+        </main>
+    </div>
 
     <!-- VERY IMPORTNAT NOTE DELTE BEFORE SUBMISSION.  LOGIC HAD TO BE BEFORE FORM FOR IT TO CHOOSE MY BUTTON
      -->

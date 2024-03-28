@@ -9,31 +9,34 @@ things. how can i combine create element, add class list and append into 1?*/
 // blogPagePost.appendChild(blogPagePost.createElement("h2").classList.add("blog-title"));
 // blogPagePost.createElement("p").classList.add("blog-content");
 
+//Define section that you want to append blog posts to
+const mainContainer = document.querySelector("main .container");
 
 // Get array of objects 
 const postsBlog = JSON.parse(localStorage.getItem('posts'));
 
 
-
+//Append the main container that will hold each post with the title, content and username of each post
 for (i=0; i < postsBlog.length; i++) {       
-        const postsCont = document.createElement("div");
-        postsCont.classList.add("posts-container");
-        document.body.appendChild(postsCont);
+        let postsContainer = document.createElement("div")
+        postsContainer.classList.add("posts-container");
+        mainContainer.appendChild(postsContainer);
         
-        titleEl = document.createElement("h2");
+        //may be able to get rid of classes here
+        let titleEl = document.createElement("h2");
         titleEl.classList.add("title-h2");
         titleEl.textContent = postsBlog[i].titleValue;
-        postsCont.appendChild(titleEl);
+        postsContainer.appendChild(titleEl);
         
-        contentEl = document.createElement("p");
+        let contentEl = document.createElement("p");
         contentEl.classList.add("content-p");
         contentEl.textContent = postsBlog[i].contentValue;
-        postsCont.appendChild(contentEl);
+        postsContainer.appendChild(contentEl);
         
-        usernameEl = document.createElement("p");
+        let usernameEl = document.createElement("p");
         usernameEl.classList.add("username");
-        usernameEl.textContent = postsBlog[i].usernameValue;
-        postsCont.appendChild(usernameEl);
+        usernameEl.textContent = `username: ${postsBlog[i].usernameValue}`;
+        postsContainer.appendChild(usernameEl);
 }
 
         

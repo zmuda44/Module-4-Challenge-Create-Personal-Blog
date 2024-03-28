@@ -1,59 +1,62 @@
+/* Universal */
 
-:root {
---dark-color: rgb(50, 50, 50);
---light-color: rgb(229, 229, 229);
---green-day: rgb(0, 150, 0);
---green-night: rgb(0, 255, 0);
---alternating-colors: var(--dark-color);
+    /* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-body.dark-mode {
-  background-color: var(--dark-color);
-  color: var(--light-color)
-  
+    /* Set variable colors */
+:root {
+    --dark-color: rgb(50, 50, 50);
+    --light-color: rgb(229, 229, 229);
+    --green-day: rgb(0, 150, 0);
+    --green-night: rgb(0, 255, 0);
+    --alternating-colors: var(--dark-color);
 }
 
 .container {
-  margin-bottom: 20px;
-  border: solid var(--green-night);
+    margin-bottom: 20px;
+}
+    
+    /* Dark mode styling */
+body.dark-mode {
+    background-color: var(--dark-color);
+    color: var(--light-color);    
 }
 
-body.dark-mode .container {
-  border: solid var(--green-night)
+
+/* Homepage styling */
+
+.homepage-container {
+    margin: 2%;
+    border: solid;
 }
 
-header .row {
-  justify-content: space-between;
-  align-items: center;
+main {
+    border-top: 15px double;
 }
 
-/* //body.dark-mode.container does not work */
-
-header .brand h3 {
-  /* text-shadow: 1px 1px 5px var(--alternating-colors);  */
-  background-color: gray;  
+main .col1 {
+    border-right: 10px double;
 }
 
-/* header .brand h3::before {
-content: attr(data-text);
-position: absolute;
-left: 0;
-z-index: -1;
-font-size: 1.4rem;
-color: red;
-} */
-
-/* color: var(--alternating-colors);  */ 
-
-body.dark-mode header .brand h3 {
- --alternating-colors: var(--light-color);
+.left-logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 500px;
 }
 
-header .day-night {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
+
+
+
 
 
