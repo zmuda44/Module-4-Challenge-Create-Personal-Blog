@@ -21,10 +21,35 @@
 }
     
     /* Dark mode styling */
+
 body.dark-mode {
     background-color: var(--dark-color);
     color: var(--light-color);    
 }
+
+/* Universal Header Section */
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+  }  
+  
+  header .brand h3 {
+    background-color: gray; 
+    padding: 10px; 
+  }
+  
+  header .day-night {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header button {
+    padding: 5px;
+  }
+
+/* Universal Footer Section */
 
 
 /* Homepage styling */

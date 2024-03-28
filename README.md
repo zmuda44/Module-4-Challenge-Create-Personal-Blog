@@ -1,5 +1,5 @@
 # My First Blog
-This repository is for my submission of the Module 3 Challenge. The application displays a table of employees with information on each employee entered through prompts. The average salary and a prize for a random chosen employee is displayed in the console.
+This repository is for my submission of the Module 4 Challenge. The application gives inputs for a user to enter the title, content and username of their blog posts. Upon submission, the blog post is posted onto a page titled blog post entries and the content of the posts is saved for future sessions. Users are able to submit new blog posts, which are posted below the previous submissions on the blog page.
 
 ## User story
 AS A marketing student
@@ -32,9 +32,8 @@ WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 
 ## URL of deployed site
-!!!Change link
-https://zmuda44.github.io/Module-3-Challenge-Employee-Payroll-Tracker/
 
-## Screenshot of deployed site
-!!! Change screenshot
-![Screenshot of deployed site](<assets/Module 3 Challenge Screenshot.png>)
+
+## Screenshots of deployed homepage
+![alt text](<First blog post day mode screenshot.png>)
+![alt text](<First blog post night mode screenshot.png>)
